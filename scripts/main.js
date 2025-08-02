@@ -33,8 +33,8 @@
 // Functions, a way of packaging code that we wish to reuse. Define code inside a function once and then run it as many time as we like, which helps to avoid writing the same code over and over
 // Conditionals, code structures used to test if an expression returns true or false
 
-let myButton = document.querySelector("button");
-let myHeading = document.querySelector("h1");
+// let myButton = document.querySelector("button");
+// let myHeading = document.querySelector("h1");
 
 function setUserName() {
   const myName = prompt("Please enter your name.");
@@ -53,9 +53,9 @@ if (!localStorage.getItem("name")) {
   myHeading.textContent = `Mozilla is cool, ${storedName}`;
 }
 
-myButton.addEventListener("click", () => {
-  setUserName();
-});
+// myButton.addEventListener("click", () => {
+//   setUserName();
+// });
 
 // setUserName() function contains a prompt() function which ask the user to enter data and stores it in a variable after they click OK
 // we're asking the user to enter a name and storing it in myName
