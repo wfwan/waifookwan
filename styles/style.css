@@ -68,3 +68,38 @@ li {
   display: flex;
   justify-content: space-between;
 }
+
+/*
+
+p : selector, select element to style
+{}: declatation, set value for property, e.g. color, property value set to red
+whole structure is ruleset
+
+; : to seperate one declaration
+: : within each declaration, seperate property and value
+
+multiple selectors in one rule, seperated by commas
+p, 
+.myclass,
+#my-id {
+  color: red;
+}
+
+px means "pixels", base font size is now 10 pixels high
+Replace PLACEHOLDER with the font-family property value you got from Google Fonts
+
+properties: 
+padding 4 value         : space around the content, top right btm left order
+border 3 value          : solid line outside the padding, width, style, color
+margin 2 value          : space outside the border, top bottom, left right, can use auto for left right value
+width 1 value           : width of an element
+background-color 1 value: color behind an element's content or padding
+color 1 value           : color of an element's content
+text-shadow 4 value     : a drop shadow on text inside element, horizontal, vertical, blur radius, base color
+display                 : display mode
+max-width 1 value       : ensure image is larger than width, 100%
+
+body element is a block element, it takes up space on the page and can accept margin, padding, and other box properties
+img is inline element, it don't accept margin value, use display: block
+
+*/
