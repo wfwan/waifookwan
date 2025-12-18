@@ -1,23 +1,13 @@
-let myButton = document.querySelector("button");
-let myHeading = document.querySelector("h1");
+const linkedinBtn = document.getElementById("linkedinBtn");
+const githubBtn = document.getElementById("githubBtn");
 
-function setUserName() {
-  const myName = prompt("Please enter your name.");
-  if (!myName) {
-    setUserName();
-  } else {
-    localStorage.setItem("name", myName);
-    myHeading.textContent = `Mozilla is cool, ${myName}`;
-  }
+function go_to_linkedin_page() {
+  window.open("https://www.linkedin.com/in/wai-fook/");
 }
 
-if (!localStorage.getItem("name")) {
-  setUserName();
-} else {
-  const storedName = localStorage.getItem("name");
-  myHeading.textContent = `Mozilla is cool, ${storedName}`;
+function go_to_github_page() {
+  window.open("https://github.com/wfwan");
 }
 
-myButton.addEventListener("click", () => {
-  setUserName();
-});
+linkedinBtn.addEventListener("click", go_to_linkedin_page);
+githubBtn.addEventListener("click", go_to_github_page);
